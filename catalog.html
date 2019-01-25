@@ -33,7 +33,7 @@
         <ul class="header__nav-list">
           <li><a class="header__nav-item" href="index.html">Главная</a></li>
           <li><a class="header__nav-item" href="#">Компания</a></li>
-          <li><a class="header__nav-item">Каталог</a></li>
+          <li><a class="header__nav-item header__nav-item--current">Каталог</a></li>
           <li><a class="header__nav-item" href="#">Новости</a></li>
           <li><a class="header__nav-item" href="#">Спецпредложения</a></li>
           <li><a class="header__nav-item" href="#">Доставка</a></li>
@@ -44,6 +44,26 @@
 
     <main>
 
+      <ul class="breadcrumbs">
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li class="breadcrumbs__current">Перфораторы</li>
+      </ul>
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <h3 class="filters__title">Цена</h3>
+        <!-- Здесь будет форма -->
+        <h3 class="filters__title">Производители</h3>
+        <!-- Здесь будет форма -->
+        <h3 class="filters__title">Питание</h3>
+        <!-- Здесь будет форма -->
+      </section>
+
+      <section class="catalog">
+        <ul class="catalog__list"></ul>
+      </section>
+
     </main>
 
     <footer class="footer">
@@ -53,7 +73,7 @@
         <ul class="footer__site-menu">
           <li><a class="footer__menu-item" href="#">Компания</a></li>
           <li><a class="footer__menu-item" href="#">Новости</a></li>
-          <li><a class="footer__menu-item">Каталог</a></li>
+          <li><a class="footer__menu-item footer__menu-item--current">Каталог</a></li>
           <li><a class="footer__menu-item" href="#">Доставка</a></li>
           <li><a class="footer__menu-item" href="#">Контакты</a></li>
         </ul>
@@ -92,7 +112,7 @@
         </section>
         <section class="footer__developed">
           <h2>Разработано</h2>
-          <p>htmlacademy.ru</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </section>
       </div>
     </footer>
