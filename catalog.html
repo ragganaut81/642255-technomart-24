@@ -60,6 +60,27 @@
         <!-- Здесь будет форма -->
       </section>
 
+      <section class="sort">
+        <h2 class="sort__title">Сортировка:</h2>
+        <ul class="sort__list">
+          <li class="sort__item sort__item--current">
+            <a href="#">По цене</a>
+          </li>
+          <li class="sort__item">
+            <a href="#">По типу</a>
+          </li>
+          <li class="sort__item">
+            <a href="#">По функционалу</a>
+          </li>
+          <li class="sort__item--descending">
+            <a class="arrow arrow-down" href="#">По убыванию</a>
+          </li>
+          <li class="sort__item--ascending">
+            <a class="arrow arrow-up" href="#">По возрастанию</a>
+          </li>
+        </ul>
+      </section>
+
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
@@ -138,7 +159,7 @@
       <section class="pagination">
         <h2 class="visually-hidden">Страницы</h2>
         <ul class="pagination__list">
-          <li class="pagination__item">1</li>
+          <li class="pagination__item pagination__item--current">1</li>
           <li class="pagination__item"><a href="#">2</a></li>
           <li class="pagination__item"><a href="#">3</a></li>
           <li class="pagination__item"><a href="#">Следующая</a></li>
