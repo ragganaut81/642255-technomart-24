@@ -21,7 +21,7 @@
         <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <div class="header__contacts">
           <a class="header__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <address class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <p class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="header__user-menu">
           <li><a class="header__login-link" href="#">Войти</a></li>
@@ -72,12 +72,12 @@
               <div class="slider__item slider__item--1">
                 <h4>Перфораторы</h4>
                 <p>Настоящие мужские игрушки</p>
-                <a href="#">Открыть каталог</a>
+                <a href="catalog.html">Открыть каталог</a>
               </div>
               <div class="slider__item slider__item--2">
                 <h4>Дрели</h4>
                 <p>Соседям на радость!</p>
-                <a href="#">Открыть каталог</a>
+                <a href="catalog.html">Открыть каталог</a>
               </div>
             </li>
             <li class="features__item features__item--4">
@@ -147,28 +147,28 @@
         </div>
         <ul class="popular-firms__list">
           <li class="popular-firms__item">
-            <img width="126" height="37" src="img/bosch.png">
+            <a href="#"><img width="126" height="37" src="img/bosch.png"></a>
           </li>
           <li class="popular-firms__item">
-            <img width="123" height="40" src="img/Makita.png">
+            <a href="#"><img width="123" height="40" src="img/Makita.png"></a>
           </li>
           <li class="popular-firms__item">
-            <img width="146" height="44" src="img/DeWALT.png">
+            <a href="#"><img width="146" height="44" src="img/DeWALT.png"></a>
           </li>
           <li class="popular-firms__item">
-            <img width="200" height="88" src="img/interskol.png">
+            <a href="#"><img width="200" height="88" src="img/interskol.png"></a>
           </li>
           <li class="popular-firms__item">
-            <img width="169" height="31" src="img/Hitachi.png">
+            <a href="#"><img width="169" height="31" src="img/Hitachi.png"></a>
           </li>
           <li class="popular-firms__item">
-            <img width="121" height="73" src="img/LG.png">
+            <a href="#"><img width="121" height="73" src="img/LG.png"></a>
           </li>
           <li class="popular-firms__item">
-            <img width="151" height="96" src="img/AEG.png">
+            <a href="#"><img width="151" height="96" src="img/AEG.png"></a>
           </li>
           <li class="popular-firms__item">
-            <img width="204" height="69" src="img/Metabo.png">
+            <a href="#"><img width="204" height="69" src="img/Metabo.png"></a>
           </li>
         </ul>
       </section>
@@ -211,6 +211,32 @@
         <h2 class="contacts__title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <a href="#">Заблудились? Напишите нам!</a>
+      </section>
+
+      <section class="modal wright-us">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="wright-us__form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="wright-us__label" for="your-name">Ваше имя:</label>
+            <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+            <label class="wright-us__label" for="your-email">Ваш e-mail:</label>
+            <input type="email" name="email" id="your-email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label class="wright-us__label" for="text">Текст письма:</label>
+            <textarea id="text" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button wright-us__button" type="submit">Отправить</button>
+        </form>
+        <button class="modal__close" type="button">Закрыть</button>
+      </section>
+
+      <section class="modal map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+          <img src="img/map-big.jpg" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal__close" type="button">Закрыть</button>
       </section>
     </main>
 
