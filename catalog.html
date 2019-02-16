@@ -50,14 +50,52 @@
         <li class="breadcrumbs__current">Перфораторы</li>
       </ul>
 
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <h3 class="filters__title">Цена</h3>
-        <!-- Здесь будет форма -->
-        <h3 class="filters__title">Производители</h3>
-        <!-- Здесь будет форма -->
-        <h3 class="filters__title">Питание</h3>
-        <!-- Здесь будет форма -->
+      <section class="filter">
+        <h2 class="filter__title">Фильтр:</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Цена:</legend>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter__option">
+                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="Bosch" id="Bosch" checked>
+                <label for="Bosch">Bosch</label>
+              </li>
+              <li class="filter__option">
+                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="Интерскол" id="Интерскол">
+                <label for="Интерскол">Интерскол</label>
+              </li>
+              <li class="filter__option">
+                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="Makita" id="Makita" checked>
+                <label for="Makita">Makita</label>
+              </li>
+              <li class="filter__option">
+                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="Dewalt" id="Dewalt">
+                <label for="Dewalt">Dewalt</label>
+              </li>
+              <li class="filter__option">
+                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="Hitachi" id="Hitachi">
+                <label for="Hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter__option">
+                <input class="visually-hidden filter__input filter__input--radio" type="radio" name="power-type" value="battery" id="battery" checked>
+                <label for="battery">Аккумуляторные</label>
+              </li>
+              <li class="filter__option">
+                <input class="visually-hidden filter__input filter__input--radio" type="radio" name="power-type" value="network" id="network">
+                <label for="network">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter__button button">Показать</button>
+        </form>
       </section>
 
       <section class="sort">
