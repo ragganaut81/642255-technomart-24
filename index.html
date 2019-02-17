@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -17,7 +20,7 @@
         </ul>
       </div>
 
-      <div class="header__middle">
+      <div class="header__bottom">
         <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <div class="header__contacts">
           <a class="header__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -27,19 +30,18 @@
           <li><a class="header__login-link" href="#">Войти</a></li>
           <li><a class="header__registration" href="#">Регистрация</a></li>
         </ul>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a class="header__nav-item">Главная</a></li>
+            <li><a class="header__nav-item" href="#">Компания</a></li>
+            <li><a class="header__nav-item" href="catalog.html">Каталог</a></li>
+            <li><a class="header__nav-item" href="#">Новости</a></li>
+            <li><a class="header__nav-item" href="#">Спецпредложения</a></li>
+            <li><a class="header__nav-item" href="#">Доставка</a></li>
+            <li><a class="header__nav-item" href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li><a class="header__nav-item">Главная</a></li>
-          <li><a class="header__nav-item" href="#">Компания</a></li>
-          <li><a class="header__nav-item" href="catalog.html">Каталог</a></li>
-          <li><a class="header__nav-item" href="#">Новости</a></li>
-          <li><a class="header__nav-item" href="#">Спецпредложения</a></li>
-          <li><a class="header__nav-item" href="#">Доставка</a></li>
-          <li><a class="header__nav-item" href="#">Контакты</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main>
@@ -72,12 +74,12 @@
               <div class="slider__item slider__item--1">
                 <h4>Перфораторы</h4>
                 <p>Настоящие мужские игрушки</p>
-                <a href="catalog.html">Открыть каталог</a>
+                <a class="red-button" href="catalog.html">Открыть каталог</a>
               </div>
               <div class="slider__item slider__item--2">
                 <h4>Дрели</h4>
                 <p>Соседям на радость!</p>
-                <a href="catalog.html">Открыть каталог</a>
+                <a class="red-button" href="catalog.html">Открыть каталог</a>
               </div>
             </li>
             <li class="features__item features__item--4">
@@ -94,7 +96,7 @@
       <section class="popular-goods">
         <div class="popular-goods__top">
           <h2>Популярные товары:</h2>
-          <a href="#">Все популярные товары</a>
+          <a class="red-button" href="#">Все популярные товары</a>
         </div>
         <ul class="popular-goods__list">
           <li class="popular-goods__item card">
@@ -143,7 +145,7 @@
       <section class="popular-firms">
         <div class="popular-firms__top">
           <h2>Популярные производители:</h2>
-          <a href="#">Все производители</a>
+          <a class="red-button" href="#">Все производители</a>
         </div>
         <ul class="popular-firms__list">
           <li class="popular-firms__item">
@@ -204,13 +206,14 @@
           <li class="about-us__item">Автотрейдинг</li>
           <li class="about-us__item">ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#">Подробнее о компании</a>
+        <a class="red-button" href="#">Подробнее о компании</a>
       </section>
 
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a href="#">Заблудились? Напишите нам!</a>
+        <img src="img/map-small.jpg">
+        <a class="red-button" href="#">Заблудились? Напишите нам!</a>
       </section>
 
       <section class="modal wright-us">
@@ -226,7 +229,7 @@
             <label class="wright-us__label" for="text">Текст письма:</label>
             <textarea id="text" placeholder="В свободной форме"></textarea>
           </p>
-          <button class="button wright-us__button" type="submit">Отправить</button>
+          <button class="red-button wright-us__button" type="submit">Отправить</button>
         </form>
         <button class="modal__close" type="button">Закрыть</button>
       </section>
@@ -255,7 +258,7 @@
 
       <div class="footer__middle">
         <div class="footer__contacts">
-          <address class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <p class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a class="footer__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
         <ul class="footer__goods-menu">
