@@ -111,9 +111,22 @@ a.header__order:active {
   background-color: #ffffff;
 }
 
+a.header__my-orders,
+a.header__account {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+  color: #32425c;
+}
+
 .header__user-menu a:hover,
 .header__user-menu a:focus {
   color: #ee3643;
+}
+
+a.header__profile:hover,
+a.header__profile:focus {
+  color: #000000;
 }
 
 .header__user-menu a:active {
@@ -342,6 +355,21 @@ a.header__order:active {
   color: #ffd180;
 }
 
+.footer__site-menu a:hover,
+.footer__site-menu a:focus,
+.footer__goods-menu a:hover,
+.footer__goods-menu a:focus {
+  text-decoration: underline;
+}
+
+.footer__site-menu a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__goods-menu a:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
 .footer__tel {
   font-size: 18px;
   line-height: 24px;
@@ -368,4 +396,159 @@ a.header__order:active {
 .footer__feedback a,
 .footer__developed a {
   color: #ffd180;
+}
+
+.footer__feedback a:hover,
+.footer__feedback a:focus,
+.footer__developed a:hover,
+.footer__developed a:focus {
+  text-decoration: underline;
+}
+
+.footer__feedback a:active,
+.footer__developed a:focus {
+  color: #ee3643;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+
+  background-color: #f2f6f8;
+}
+
+.filter__title,
+.sort__title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f7f3ec;
+}
+
+.filter legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter__option label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter__button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sort {
+  background-color: #f7f3ec;
+}
+
+.sort__item a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort__item--current a {
+  color: #ee3643;
+}
+
+.sort__item a:hover,
+.sort__item a:focus {
+  color: #000000;
+}
+
+.sort__item a:active {
+  color: #ee3643;
+}
+
+.catalog__list {
+  list-style: none;
+}
+
+.pagination__list {
+  list-style: none;
+}
+
+.pagination__item a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pagination__item--current a {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.description {
+  background-color: #f2f6f8;
+}
+
+.description__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.description__text {
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+}
+
+.modal__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.modal__bottom {
+  background-color: #f1f1f1;
+}
+
+.add-to-cart-button {
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
 }

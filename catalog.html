@@ -27,8 +27,10 @@
           <p class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="header__user-menu">
-          <li><a class="header__login-link" href="#">Войти</a></li>
-          <li><a class="header__registration" href="#">Регистрация</a></li>
+          <li><a class="header__profile" href="#">Равшан Джамшутович</a></li>
+          <li><a class="header__exit" href="#">Выход</a></li>
+          <li><a class="header__my-orders" href="#">Мои заказы</a></li>
+          <li><a class="header__account" href="#">Личный кабинет</a></li>
         </ul>
         <nav class="header__nav">
           <ul class="header__nav-list">
@@ -49,16 +51,18 @@
       <ul class="breadcrumbs">
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
-        <li class="breadcrumbs__current">Перфораторы</li>
+        <li class="breadcrumbs__current"><a>Перфораторы</a></li>
       </ul>
 
+      <h2 class="page-title">Перфораторы</h2>
+
       <section class="filter">
-        <h2 class="filter__title">Фильтр:</h2>
+        <h3 class="filter__title">Фильтр:</h3>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="filter__price">
             <legend>Цена:</legend>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter__firms">
             <legend>Производители:</legend>
             <ul>
               <li class="filter__option">
@@ -83,7 +87,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter__power-type">
             <legend>Питание:</legend>
             <ul>
               <li class="filter__option">
@@ -101,7 +105,7 @@
       </section>
 
       <section class="sort">
-        <h2 class="sort__title">Сортировка:</h2>
+        <h3 class="sort__title">Сортировка:</h3>
         <ul class="sort__list">
           <li class="sort__item sort__item--current">
             <a href="#">По цене</a>
@@ -122,7 +126,7 @@
       </section>
 
       <section class="catalog">
-        <h2 class="visually-hidden">Список товаров</h2>
+        <h3 class="visually-hidden">Список товаров</h3>
         <ul class="catalog__list">
           <li class="catalog__item card">
             <div class="card__actions">
@@ -218,9 +222,9 @@
       </section>
 
       <section class="pagination">
-        <h2 class="visually-hidden">Страницы</h2>
+        <h3 class="visually-hidden">Страницы</h3>
         <ul class="pagination__list">
-          <li class="pagination__item pagination__item--current">1</li>
+          <li class="pagination__item pagination__item--current"><a>1</a></li>
           <li class="pagination__item"><a href="#">2</a></li>
           <li class="pagination__item"><a href="#">3</a></li>
           <li class="pagination__item"><a href="#">Следующая</a></li>
@@ -228,14 +232,16 @@
       </section>
 
       <section class="description">
-        <h2 class="description__title">Пара слов о перфораторах</h2>
+        <h3 class="description__title">Пара слов о перфораторах</h3>
         <p class="description__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
 
       <section class="modal add-to-cart">
-        <h2 class="modal__title">Товар добавлен в корзину!</h2>
-        <button class="button modal__button">Оформить заказ</button>
-        <button class="button modal__button">Продолжить покупки</button>
+        <h3 class="modal__title">Товар добавлен в корзину!</h3>
+        <div class="modal__bottom">
+          <button class="red-button modal__button">Оформить заказ</button>
+          <button class="add-to-cart-button modal__button">Продолжить покупки</button>
+        </div>
       </section>
 
     </main>
