@@ -11,39 +11,42 @@
     <header class="header">
 
       <div class="header__top">
-        <a class="header__logo" href="index.html">Техномарт</a>
-        <span>Поиск</span>
-        <ul class="header__menu">
-          <li><a class="header__bookmarks" href="#">Закладки: 0</a></li>
-          <li><a class="header__cart" href="#">Корзина: 0</a></li>
-          <li><a class="header__order" href="#">Оформить заказ</a></li>
-        </ul>
+        <div class="container">
+          <a class="header__logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип Техномарт"></a>
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <input name="s" placeholder="Поиск:" type="search">
+            <button class="search__button" type="submit">Поиск</button>
+          </form>
+          <ul class="header__menu">
+            <li><a class="header__bookmarks" href="#">Закладки: 0</a></li>
+            <li><a class="header__cart" href="#">Корзина: 0</a></li>
+            <li><a class="header__order" href="#">Оформить заказ</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="header__bottom">
-        <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <div class="header__bottom container">
+        <h1 class="header__title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
         <div class="header__contacts">
           <a class="header__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="header__user-menu">
-          <li><a class="header__profile" href="#">Равшан Джамшутович</a></li>
-          <li><a class="header__exit" href="#">Выход</a></li>
-          <li><a class="header__my-orders" href="#">Мои заказы</a></li>
-          <li><a class="header__account" href="#">Личный кабинет</a></li>
+          <li><a class="header__login-link" href="#">Войти</a></li>
+          <li><a class="header__registration" href="#">Регистрация</a></li>
         </ul>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li><a class="header__nav-item" href="index.html">Главная</a></li>
-            <li><a class="header__nav-item" href="#">Компания</a></li>
-            <li><a class="header__nav-item">Каталог</a></li>
-            <li><a class="header__nav-item" href="#">Новости</a></li>
-            <li><a class="header__nav-item" href="#">Спецпредложения</a></li>
-            <li><a class="header__nav-item" href="#">Доставка</a></li>
-            <li><a class="header__nav-item" href="#">Контакты</a></li>
-          </ul>
-        </nav>
       </div>
+      <nav class="header__nav container">
+        <ul class="header__nav-list">
+          <li><a class="header__nav-item" href="index.html">Главная</a></li>
+          <li><a class="header__nav-item" href="#">Компания</a></li>
+          <li><a class="header__nav-item">Каталог</a></li>
+          <li><a class="header__nav-item" href="#">Новости</a></li>
+          <li><a class="header__nav-item" href="#">Спецпредложения</a></li>
+          <li><a class="header__nav-item" href="#">Доставка</a></li>
+          <li><a class="header__nav-item" href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -249,7 +252,7 @@
     <footer class="footer">
 
       <div class="footer__top">
-        <a class="footer__logo" href="index.html">Техномарт</a>
+        <a class="footer__logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип Техномарт"></a>
         <ul class="footer__site-menu">
           <li><a class="footer__menu-item" href="#">Компания</a></li>
           <li><a class="footer__menu-item" href="#">Новости</a></li>
