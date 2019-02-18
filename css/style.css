@@ -21,6 +21,14 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -196,12 +204,17 @@ a.header__profile:focus {
 
 .features__list {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 0;
 
   list-style: none;
 }
 
 .features__item {
   width: 300px;
+  height: 123px;
 }
 
 .features__item h3 {
@@ -246,6 +259,17 @@ a.header__profile:focus {
   background-color: #ffc047;
 }
 
+.slider__arrow {
+  position: absolute;
+}
+
+.slider__item {
+  width: 620px;
+  height: 266px;
+  padding: 0;
+  margin: 0;
+}
+
 .slider__item--1 {
   display: none;
 
@@ -259,6 +283,8 @@ a.header__profile:focus {
 }
 
 .slider__item h4 {
+  margin: 0;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -272,6 +298,9 @@ a.header__profile:focus {
 
 .popular-goods__top,
 .popular-firms__top {
+  display: flex;
+  justify-content: space-between;
+
   background-color: #f9f5f0;
 }
 
@@ -286,7 +315,17 @@ a.header__profile:focus {
 
 .popular-goods__list,
 .popular-firms__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 0;
+
   list-style: none;
+}
+
+.card {
+  width: 218px;
 }
 
 .card__buy {
@@ -345,6 +384,10 @@ a.header__profile:focus {
   background-color: #f4f7f9;
 }
 
+.services__text {
+  width: 440px;
+}
+
 .services__title,
 .about-us__title,
 .contacts__title {
@@ -362,6 +405,15 @@ a.header__profile:focus {
   color: #000000;
 }
 
+.page-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 540px;
+}
+
 .about-us__list {
   list-style: none;
 }
@@ -372,19 +424,39 @@ a.header__profile:focus {
   color: #000000;
 }
 
+.contacts {
+  width: 300px;
+}
+
+.wright-us {
+  display: none;
+}
+
+.map {
+  display: none;
+}
+
 .wright-us__label {
   font-size: 18px;
   line-height: 18px;
   color: #000000;
 }
 
+.footer {
+  background-color: #32425c;
+}
+
 .footer__top,
 .footer__middle {
-  background-color: #32425c;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__site-menu,
 .footer__goods-menu {
+  display: flex;
+  justify-content: space-between;
+
   list-style: none;
 }
 
@@ -427,6 +499,11 @@ a.header__profile:focus {
   background-color: #293449;
 }
 
+.footer__bottom div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__copyright p,
 .footer__feedback h2,
 .footer__feedback a,
@@ -437,6 +514,9 @@ a.header__profile:focus {
 }
 
 .footer__social-list {
+  display: flex;
+  justify-content: space-between;
+
   list-style: none;
 }
 
