@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,8 +12,8 @@
 
       <div class="header__top">
         <div class="container">
-          <a class="header__logo"><img src="img/logo-technomart.svg" alt="Логотип Техномарт"></a>
-          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <a class="header__logo"><img src="img/logo-technomart.svg" width="110" alt="Логотип Техномарт"></a>
+          <form class="header__search" action="https://echo.htmlacademy.ru" method="get">
             <input name="s" placeholder="Поиск:" type="search">
             <button class="search__button" type="submit">Поиск</button>
           </form>
@@ -54,7 +54,8 @@
       <section class="features container">
         <h2 class="visually-hidden">Предложения</h2>
         <ul class="features__list">
-          <li class="features__item features__item--1 new-flag">
+          <li class="features__item features__item--1">
+            <div class="features__flag flag flag-new">новинка</div>
             <h3>Материалы</h3>
             <a href="#">На любой вкус</a>
           </li>
@@ -79,29 +80,31 @@
             <div class="slider__item slider__item--1">
               <h4>Перфораторы</h4>
               <p>Настоящие мужские игрушки</p>
-              <a class="red-button" href="catalog.html">Открыть каталог</a>
+              <a class="slider__button button" href="catalog.html">Открыть каталог</a>
             </div>
             <div class="slider__item slider__item--2">
               <h4>Дрели</h4>
               <p>Соседям на радость!</p>
-              <a class="red-button" href="catalog.html">Открыть каталог</a>
+              <a class="slider__button button" href="catalog.html">Открыть каталог</a>
             </div>
           </li>
-          <li class="features__item features__item--4">
-            <h3>Скидки 50%</h3>
-            <a href="#">На 350 товаров</a>
-          </li>
-          <li class="features__item features__item--5">
-            <h3>Доставка</h3>
-            <a href="#">Бесплатно</a>
-          </li>
+          <div class="features__right-side">
+            <li class="features__item features__item--4">
+              <h3>Скидки 50%</h3>
+              <a href="#">На 350 товаров</a>
+            </li>
+            <li class="features__item features__item--5">
+              <h3>Доставка</h3>
+              <a href="#">Бесплатно</a>
+            </li>
+          </div>
         </ul>
       </section>
 
       <section class="popular-goods container">
         <div class="popular-goods__top">
           <h2>Популярные товары:</h2>
-          <a class="red-button" href="#">Все популярные товары</a>
+          <a class="popular-goods__button button" href="#">Все популярные товары</a>
         </div>
         <ul class="popular-goods__list">
           <li class="popular-goods__item card">
@@ -134,7 +137,8 @@
             <div class="card__discount">30500 Р.</div>
             <div class="card__price">25500 Р.</div>
           </li>
-          <li class="popular-goods__item card new-flag">
+          <li class="popular-goods__item card">
+            <div class="flag flag-new">новинка</div>
             <div class="card__actions">
                 <a href="#" class="card__buy">Купить</a>
                 <a href="#" class="card__bookmark">В закладки</a>
@@ -150,7 +154,7 @@
       <section class="popular-firms container">
         <div class="popular-firms__top">
           <h2>Популярные производители:</h2>
-          <a class="red-button" href="#">Все производители</a>
+          <a class="popular-firms__button button" href="#">Все производители</a>
         </div>
         <ul class="popular-firms__list">
           <li class="popular-firms__item">
@@ -186,26 +190,27 @@
           <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services__slider">
-            <input class="visually-hidden" type="radio" id="service-1" name="button" checked>
-            <input class="visually-hidden" type="radio" id="service-2" name="button">
-            <input class="visually-hidden" type="radio" id="service-3" name="button">
-            <label class="services__control" for="service-1">Доставка</label>
-            <label class="services__control" for="service-2">Гарантия</label>
-            <label class="services__control" for="service-3">Кредит</label>
-            <div class="services__delivery">
-              <h3 class="services__slide-title">Доставка</h3>
-              <p class="services__text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-            </div>
-            <div class="services__guaranty"></div>
-            <div class="services__credit"></div>
+            <ul class="services__list">
+              <li class="services__item services__item--active">Доставка</li>
+              <li class="services__item">Гарантия</li>
+              <li class="services__item">Кредит</li>
+            </ul>
+            <ul class="services__slides">
+              <li class="services__slide services__slide--delivery">
+                <h3 class="services__slide-title">Доставка</h3>
+                <p class="services__text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+              </li>
+              <li class="services__slide services__slide--guaranty"></li>
+              <li class="services__slide services__slide--credit"></li>
+            </ul>
           </div>
         </div>
       </section>
 
       <div class="page-bottom container">
         <section class="about-us">
-          <h2 class="about-us__title">Компания "Техномарт"</h2>
+          <h2 class="about-us__title">Компания &laquo;Техномарт&raquo;</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт&nbspработает&nbspсо многими транспортными компаниями:</p>
@@ -214,14 +219,14 @@
             <li class="about-us__item">Автотрейдинг</li>
             <li class="about-us__item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="red-button" href="#">Подробнее о компании</a>
+          <a class="about-us__button button" href="#">Подробнее о компании</a>
         </section>
 
         <section class="contacts">
           <h2 class="contacts__title">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <img src="img/map-small.jpg">
-          <a class="red-button" href="#">Заблудились? Напишите нам!</a>
+          <a class="contacts__button button" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
 
@@ -238,7 +243,7 @@
             <label class="wright-us__label" for="text">Текст письма:</label>
             <textarea id="text" placeholder="В свободной форме"></textarea>
           </p>
-          <button class="red-button wright-us__button" type="submit">Отправить</button>
+          <button class="button wright-us__button" type="submit">Отправить</button>
         </form>
         <button class="modal__close" type="button">Закрыть</button>
       </section>
@@ -290,9 +295,9 @@
           <section class="footer__social">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="footer__social-list">
-              <li><a class="footer__vk" href="#">vk</a></li>
-              <li><a class="footer__facebook" href="#">facebook</a></li>
-              <li><a class="footer__instagram" href="#">instagram</a></li>
+              <li><a class="footer__social-icon footer__social-icon--vk" href="#"><img src="img/icon-vk.svg"></a></li>
+              <li><a class="footer__social-icon footer__social-icon--fb" href="#"><img src="img/icon-fb.svg"></a></li>
+              <li><a class="footer__social-icon footer__social-icon--insta" href="#"><img src="img/icon-insta.svg"></a></li>
             </ul>
           </section>
           <section class="footer__feedback">
@@ -300,7 +305,7 @@
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </section>
           <section class="footer__developed">
-            <h2>Разработано</h2>
+            <h2>Разработано &mdash;</h2>
             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </section>
         </div>

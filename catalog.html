@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,8 +12,8 @@
 
       <div class="header__top">
         <div class="container">
-          <a class="header__logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип Техномарт"></a>
-          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <a class="header__logo" href="index.html"><img src="img/logo-technomart.svg" width="110" alt="Логотип Техномарт"></a>
+          <form class="header__search" action="https://echo.htmlacademy.ru" method="get">
             <input name="s" placeholder="Поиск:" type="search">
             <button class="search__button" type="submit">Поиск</button>
           </form>
@@ -154,7 +154,8 @@
                   <div class="card__discount">30500 Р.</div>
                   <div class="card__price">25500 Р.</div>
                 </li>
-                <li class="catalog__item card new-flag">
+                <li class="catalog__item card">
+                  <div class="flag flag-new">новинка</div>
                   <div class="card__actions">
                       <a href="#" class="card__buy">Купить</a>
                       <a href="#" class="card__bookmark">В закладки</a>
@@ -174,7 +175,8 @@
                   <div class="card__discount">22500 Р.</div>
                   <div class="card__price">15500 Р.</div>
                 </li>
-                <li class="catalog__item card new-flag">
+                <li class="catalog__item card">
+                  <div class="flag flag-new">новинка</div>
                   <div class="card__actions">
                       <a href="#" class="card__buy">Купить</a>
                       <a href="#" class="card__bookmark">В закладки</a>
@@ -194,7 +196,8 @@
                   <div class="card__discount no-discount"></div>
                   <div class="card__price">12500 Р.</div>
                 </li>
-                <li class="catalog__item card new-flag">
+                <li class="catalog__item card">
+                  <div class="flag flag-new">новинка</div>
                   <div class="card__actions">
                       <a href="#" class="card__buy">Купить</a>
                       <a href="#" class="card__bookmark">В закладки</a>
@@ -250,7 +253,7 @@
       <section class="modal add-to-cart">
         <h3 class="modal__title">Товар добавлен в корзину!</h3>
         <div class="modal__bottom">
-          <button class="red-button modal__button">Оформить заказ</button>
+          <button class="button modal__button">Оформить заказ</button>
           <button class="add-to-cart-button modal__button">Продолжить покупки</button>
         </div>
       </section>
