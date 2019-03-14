@@ -233,16 +233,18 @@
       <section class="modal wright-us">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form class="wright-us__form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="wright-us__label" for="your-name">Ваше имя:</label>
-            <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
-            <label class="wright-us__label" for="your-email">Ваш e-mail:</label>
-            <input type="email" name="email" id="your-email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label class="wright-us__label" for="text">Текст письма:</label>
-            <textarea id="text" placeholder="В свободной форме"></textarea>
-          </p>
+          <div class="wright-us__top">
+            <div class="wright-us__col">
+              <label class="wright-us__label" for="your-name">Ваше имя:</label>
+              <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+            </div>
+            <div class="wright-us__col">
+              <label class="wright-us__label" for="your-email">Ваш e-mail:</label>
+              <input type="email" name="email" id="your-email" placeholder="email@example.com">
+            </div>
+          </div>
+          <label class="wright-us__label" for="text">Текст письма:</label>
+          <textarea id="text" placeholder="В свободной форме"></textarea>
           <button class="button wright-us__button" type="submit">Отправить</button>
         </form>
         <button class="modal__close" type="button">Закрыть</button>

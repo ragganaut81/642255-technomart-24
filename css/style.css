@@ -813,8 +813,97 @@ a.header__profile:focus {
   margin-bottom: 35px;
 }
 
+.modal {
+  position: fixed;
+
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  background-color: #ffffff;
+}
+
+.modal__close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  border: 0;
+
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: -3px;
+
+  width: 27px;
+  height: 4px;
+
+  background-color: #ee3643;
+}
+
+.modal__close::before {
+  transform: rotate(45deg);
+}
+
+.modal__close::after {
+  transform: rotate(-45deg);
+}
+
 .wright-us {
   display: block;
+  top: 134px;
+  left: 50%;
+  margin-left: -310px;
+  padding: 0 80px;
+
+  width: 620px;
+  border-top: solid 7px #ee3643;
+}
+
+.wright-us__top {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 46px;
+  margin-bottom: 21px;
+}
+
+.wright-us__col {
+  width: 220px;
+}
+
+.wright-us__form input[type="text"],
+.wright-us__form input[type="email"] {
+  margin-top: 8px;
+  padding: 10px 15px 8px;
+  width: 220px;
+  border: 2px solid #dee3e4;
+}
+
+.wright-us__form textarea {
+  margin-top: 8px;
+  margin-bottom: 73px;
+  padding: 10px 15px 8px;
+  width: 460px;
+  min-height: 114px;
+  border: 2px solid #dee3e4;
+}
+
+.wright-us__button {
+  margin-bottom: 37px;
+  padding-top: 12px;
+  width: 460px;
+  border: none;
+  border-radius: 4px;
 }
 
 .map {
@@ -822,6 +911,7 @@ a.header__profile:focus {
 }
 
 .wright-us__label {
+
   font-size: 18px;
   line-height: 18px;
   color: #000000;
