@@ -662,7 +662,6 @@ a.header__profile:focus {
 
   text-indent: -1000px;
   overflow: hidden;
-  z-index: 20;
 }
 
 .features__flag {
@@ -833,7 +832,7 @@ a.header__profile:focus {
   border: 0;
 
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .modal__close::before,
@@ -859,7 +858,7 @@ a.header__profile:focus {
 }
 
 .wright-us {
-  display: block;
+  display: none;
   top: 134px;
   left: 50%;
   margin-left: -310px;
@@ -907,7 +906,17 @@ a.header__profile:focus {
 }
 
 .map {
-  display: none;
+  display: block;
+
+  position: fixed;
+  top: 50px;
+  left: 50%;
+
+  width: 940px;
+  height: 447px;
+  margin-left: -470px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  background-image: url(../img/map-big.jpg);
 }
 
 .wright-us__label {
